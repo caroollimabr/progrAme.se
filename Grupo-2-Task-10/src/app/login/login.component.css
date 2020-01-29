@@ -1,0 +1,21 @@
+.form-signin{
+    margin: 0 auto;
+    width: 25%;
+}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#texto-login{
+    text-align: center;
+}
+
+#msgErro{
+    font-style: italic;
+    color: red;
+    vertical-align: middle;
+    visibility: hidden;
+}

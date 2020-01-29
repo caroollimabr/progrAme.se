@@ -1,0 +1,26 @@
+<div>
+    <form class="form-signin">
+        <img id="logo" src="./../../assets/images/logo.PNG" alt="logo da empresa" width="200" height="200">
+        
+        <h1 id="texto-login" class="h3 mb-3 font-weight-normal">Faça login em sua conta e progrAme.se</h1>
+        
+        <label for="inputEmail" class="sr-only">E-mail</label>
+        
+        <input [(ngModel)]="login.email" [ngModelOptions]="{standalone: true}" type="email" id="inputEmail" class="form-control" placeholder="seuemail@email.com" required autofocus>
+        
+        <label for="inputPassword" id="inputPassword" class="sr-only">Senha:</label>
+        
+        <input [(ngModel)]="login.senha" [ngModelOptions]="{standalone: true}" type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+
+        <div class="checkbox mb-3">
+            <label>
+                <input id="remember" type="checkbox" value="remember-me">Lembrar-me
+            </label>
+        </div>
+        
+        <div id="msgErro"><p>Campo(s) obrigatório(s)</p></div>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="action" (click)="fazerLogin()">Entrar</button>
+
+    </form>
+</div>

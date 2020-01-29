@@ -1,0 +1,54 @@
+.cabecalho {
+    height: 400px;
+    background-image: url('../../assets/images/img-header.jpg');
+    background-size: cover;
+}
+
+.cabecalho-cor-fonte {
+    color: #000;
+}
+
+.sobre-nos {
+    height: auto;
+    background-color: #7fa7b8;
+}
+
+#minibios {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.linha-minibio {
+    padding: 80px;
+    margin: 0 auto;
+}
+
+.profissao {
+    font-size: 25px;
+}
+
+.info-minibio {
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.texto-minibio {
+    padding: 50px;
+}
+
+.estilo-foto {
+    width: 350px; 
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+#nossa-missao {
+    margin: 0px 60px;
+    text-align: center;
+}
+
+#botaotopo {
+    margin: 0 auto;
+}

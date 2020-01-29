@@ -1,0 +1,54 @@
+<form [formGroup]="formularioDeUsuario" (ngSubmit)="enviarDados()" required>
+        <div>
+        <!-- Inicio do campo: Nome-->
+          <label for="nome">Nome: </label>
+          <input type="text" [(ngModel)]="usuario.nome" formControlName="nome">
+        </div>
+        <!-- Fim do campo: Nome -->
+
+        <!-- Inicio do campo: E-mail-->
+        <div>
+          <label for="email">E-mail: </label>
+          <input type="text" [(ngModel)]="usuario.email" formControlName="email">
+        </div>
+        <!-- Fim do campo: E-mail -->
+      
+        <!-- Inicio do campo: Telefone-->
+        <div>
+          <label for="telefone">Telefone: </label>
+          <input type="tel" [(ngModel)]="usuario.telefone" pattern="[0-9]{8,11}" formControlName="telefone">
+        </div>
+        <!-- Fim do campo: Telefone -->
+
+        <!-- Início do campo: Senha -->
+        <div>
+          <label class="control-label" for="senha">Senha: </label>
+          <input 
+            type="password"
+            [(ngModel)]="usuario.senha"
+            (keyup)="forcaDaSenha()"
+            formControlName="senha"
+          >
+        </div>
+        <div *ngIf="this.usuario.senha && this.usuario.senha.length >= 1" >
+        {{this.senhaForte ? 'Senha Forte': 'Senha fraca'}}
+      </div> <!-- IF TERNARIO PARA MSG DE SENHA -->
+
+      
+        <div>
+          <label for="confirmarSenha">Confirmar senha: </label>
+          <input type="password" (keyup)="verificaSenhasConferem()" [(ngModel)]="confirmacaoSenha" formControlName="confirmarSenha">
+        </div>
+        <div *ngIf="this.confirmacaoSenha.length >= 1 && this.usuario.senha !== this.confirmacaoSenha">Senhas não conferem</div>
+        <!-- Fim do campo: Senha -->
+      
+        <br>
+        <div>
+          <button (click)="cadastrar()" [disabled]="!formularioDeUsuario.valid && !this.senhasConferem">Cadastrar</button>
+        </div>
+        
+      
+        <br>
+        <br>
+
+</form>
