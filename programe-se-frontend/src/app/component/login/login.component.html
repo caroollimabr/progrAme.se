@@ -1,0 +1,45 @@
+<!--Modal: Login / Register Form-->
+<!-- <script>
+    $(document).ready(function () {
+        if (window.location.href.indexOf('#login') != -1) {
+            $('#modalLRForm').modal('show');
+        }
+    });
+</script> -->
+
+<div class="modal" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <div class="login-logo">
+                <br><br>
+                <label>
+                    <h1 class="form-title">Faça seu login</h1>
+                </label>
+            </div>
+
+            <div class="md-form form-sm">
+                <i class="fa fa-user prefix"></i>
+                <input type="text" name="email" input [(ngModel)]="usuario.email" [ngModelOptions]="{standalone: true}"
+                    id="email" class="form-control form-control-sm" />
+                <label for="form3" required>E-mail</label>
+            </div>
+            <div class="md-form form-sm">
+                <i class="fa fa-envelope prefix"></i>
+                <input type="password" name="senha" id="senha" input [(ngModel)]="usuario.senha"
+                    [ngModelOptions]="{standalone: true}" class="form-control form-control-sm" required />
+                <label for="form2">Senha</label>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="button" class="btn btn-default btn-rounded" data-dismiss="modal" id="btnfecharLogin"
+                    (click)="logar();">
+                    Enviar <i class="fa fa-paper-plane-o ml-1"></i>
+                </button>
+            </div>
+            <div id="msgErro">
+                <p>Campo(s) obrigatório(s)</p>
+            </div>
+        </div>
+    </div>
+</div>

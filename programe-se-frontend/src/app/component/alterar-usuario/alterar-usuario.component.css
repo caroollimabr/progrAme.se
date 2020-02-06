@@ -1,0 +1,14 @@
+.cardSize {
+    max-width: 800px;
+    padding: 25px;
+  }
+  
+  .card input:focus ~ label, 
+  input:not(:placeholder-shown) ~ label,
+  input:valid ~ label,
+  input:-webkit-autofill:focus ~ label {
+    top:-5px;
+    font-size:13px;
+    color:#646464;
+    font-weight: 300;left:3px
+  }

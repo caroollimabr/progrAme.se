@@ -1,0 +1,111 @@
+body{
+    background-color: #ffffff;
+    margin: auto
+}
+
+.help-title{
+    text-align: center;
+    font-size: 3em;
+    color: #4097AA ;
+    font-weight: bolder;
+    padding: 1.2em;
+  
+}
+
+
+/* Formatação Collapse */
+
+
+.collapse-title{
+    color: #4097aa;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.ask-title{
+    color: #4097AA ;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.card-header{
+    color: #008080;
+    font-size: 1em;
+}
+
+.answer-text{
+    color: #2d4057;
+    font-size: 0.8em;
+}
+
+.card-body{
+    background-color:#f2ddc8; 
+}
+
+.col-md-3{
+    padding: 0.1em;
+    padding-bottom: 4em;
+    margin: 10px;
+}
+
+.card .card-body .card-text{
+    font-size: 0.9em;
+    color:  #2d4057;
+}
+
+.card .card-body h4{
+    color: #2d4057;
+    font-weight: bolder;
+}
+
+.white-text {
+    color: #4097AA !important;
+}
+
+.incon-fas{
+    color:#4097AA !important;
+
+}
+
+.rgba-black-strong{
+   color: rgba(0,0,0,0.2);
+}
+
+/* Formatação Formulario */
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-title{
+    color: #4097AA  ;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.form-subtitle{
+    color: #4097AA;
+}
+
+.form-text{
+    color: #bdbdbd;
+    font-size: 0.8em;
+}
+
+.fa{
+    color: #4097AA;
+}
+
+.btn{
+    color: #ffffff;
+    background-color: #4097AA;
+}
+
+.card-image{
+    background-image: url(../../../assets/images/ca-bg.png);
+    width: 100%;
+
+}
+/*mudado 31-01 no HTML card-body ((<div class="card-body-1 rgba-light white-text z-depth-5)) -->> tirei o black*/

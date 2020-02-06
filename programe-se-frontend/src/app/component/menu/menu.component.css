@@ -1,0 +1,29 @@
+.navbar {
+   padding: 0.2em;
+   z-index: 3; /*posiciona camadas: qt maior o n, sobrepõe camadas*/
+}
+
+/* Não há referência para isso 
+.nav-margin{
+   margin-right: 0.25em;
+}
+
+*/
+
+/*div inicial, links*/
+.navbar.navbar-light .nav-link  { 
+   padding: 0.3em;
+   font-size: 0.9em;
+   margin-right: 0.3em; 
+
+}
+
+ul {
+  
+   background-color: #f8f9fa; 
+ }
+ 
+ li a:hover, .dropdown:hover .dropbtn {
+   background-color: #f3decac0; 
+ }
+ 
