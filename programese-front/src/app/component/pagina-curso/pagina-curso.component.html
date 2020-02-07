@@ -1,0 +1,23 @@
+<div class="container-fluid">
+
+  <h1 class="my-4 text-center">Curso {{curso.nome}}<br />
+  </h1>
+
+  <div class="row justify-content-around">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a><img class="card-img-top" src="{{curso.urlImagem}}" alt=""></a>
+        <div class="card-body ">
+          <h4 class="card-title">
+            <a>{{curso.nome}}</a>
+          </h4>
+          <p class="card-text">{{curso.descricao}}</p>
+          <div class="text-center">
+            <h4 class="font-weight-bold">R$ {{curso.preco}}</h4>
+            <button class="btn btn-comprar">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

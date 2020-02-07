@@ -1,0 +1,69 @@
+<!--Modal: Login / Register Form-->
+<script>
+    $('#modalLRForm').on('hidden.bs.modal', function(e) {
+
+        $(document).ready(function() {
+            if (window.location.href.indexOf('#modalLRForm2') != -1) {
+                $('#modalLRForm2').modal('show');
+                $('#modalLRForm').modal('');
+            }
+        });
+
+    })
+</script>
+
+
+
+
+
+
+
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <div class="login-logo">
+                <br><br>
+
+                <label>
+                    <h1 class="form-title">Faça seu login</h1>
+                </label>
+
+            </div>
+
+
+            <form class="col-xl-10 py-10">
+                <div class="md-form form-sm">
+                    <i class="fa fa-user prefix"></i>
+                    <input type="text" input [(ngModel)]="login.email" [ngModelOptions]="{standalone: true}" id="email" class="form-control form-control-sm" />
+                    <label for="email" required>E-mail</label>
+                </div>
+                <div class="md-form form-sm">
+                    <i class="fa fa-envelope prefix"></i>
+                    <input type="password" id="senha" input [(ngModel)]="login.senha" [ngModelOptions]="{standalone: true}" class="form-control form-control-sm" required />
+                    <label for="senha">Senha</label>
+                </div>
+
+
+
+                <label>
+                    <input id="remember" type="checkbox" value="remember-me">Lembrar-me
+                </label>
+
+
+                <div class="text-center mt-4">
+                    <button class="btn btn-default btn-rounded" (click)="fazerLogin()">
+                        Enviar <i class="fa fa-paper-plane-o ml-1"></i>
+                    </button>
+                </div>
+            </form>
+            <div id="msgErro">
+                <p>Campo(s) obrigatório(s)</p>
+            </div>
+            <br><br>
+
+            <!---Redirecionamento Tela-->
+
+            <p class="text-center">Não tem conta? <a data-toggle="modal" data-target="#modalLRForm2" [routerLink]="'/login'">Cadastre-se</a></p>
+        </div>
