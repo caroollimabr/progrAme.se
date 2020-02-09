@@ -1,7 +1,7 @@
-import { Globals } from '../../model/Globals';
-import { Login } from '../../model/login';
+import { Globals } from '../../model/Globals';;
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Curso } from 'src/app/model/Curso';
+import { CursoService } from 'src/app/service/curso.service';
 
 @Component({
   selector: 'app-home',
@@ -11,22 +11,22 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  login: Login;
+  curso: Curso = new Curso(null, null, null, null, null, null);
+  cursos: Array<Curso> = new Array<Curso>();
 
-  constructor(private router: Router) { }
+  constructor(private cursoService: CursoService) { }
 
   ngOnInit() {
-    /* LOGIN
     
-    if(Globals.LOGIN == undefined){
-      this.router.navigate(['/login']);
-    } else {
-      this.login = Globals.LOGIN;
-
-    }
-
-    */
+    this.findAllCursos();
     
-  }
+   }
+ 
+   findAllCursos(){
+     this.cursoService.getAll().subscribe((cursoOut: Curso[])=>{
+       this.cursos = cursoOut;
+     });
+   }
+ }
 
-}
+  

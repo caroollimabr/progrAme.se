@@ -1,4 +1,31 @@
-.cardSize {
-    max-width: 800px;
-    padding: 25px;
-  }
+.center-block { /*Formulário*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-title {
+  color: #4097aa;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.fas { /*Ícones nome, url e preço*/
+  color: #4097aa;
+}
+
+
+/* CLASSE INEXISTENTE
+.fal {
+  color: #4097aa;
+} */
+
+.far { /*Ícones descrição e duração*/
+  color: #4097aa;
+}
+
+.btn{ /*Botão*/
+background-color: #4097aa;
+color: #ffffff;
+}

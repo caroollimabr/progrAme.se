@@ -1,6 +1,7 @@
 import { Usuario } from '../../model/usuario';
 import { CadastroService } from '../../service/cadastro.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-listar-usuario',
@@ -9,13 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarUsuarioComponent implements OnInit {
 
-
   cadastrados: Array<Usuario> = new  Array<Usuario>();
 
-  constructor(private cadastroService: CadastroService) { }
+  constructor(private cadastroService: CadastroService, private router: Router) { }
 
   ngOnInit() {
-    this.findAll();
+    if (!localStorage.getItem("token")) {
+      alert("Você precisa estar logado!")
+      this.router.navigate(['/home']);
+
+    } else {
+      this.router.navigate(['/listar-usuario']);
+      this.findAll();
+    }
   }
 
   findAll(){
@@ -31,4 +38,5 @@ export class ListarUsuarioComponent implements OnInit {
   });
 
 }}
+
 

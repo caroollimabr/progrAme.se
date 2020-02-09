@@ -4,7 +4,7 @@
     width: 100%; 
 }
 
-.sobre-nos {
+.sobre-nos { /*main*/
     height: auto;
     background:linear-gradient(to bottom, #ffffff, #f3deca);
     color: #2d4057;
@@ -12,7 +12,7 @@
     
 }
 
-#nossa-missao {
+#nossa-missao { /*Frase principal 'Nossa missão...'*/
     margin: 3em 3em;
     text-align: center;
     color: #fa9483;
@@ -20,13 +20,14 @@
     font-weight: bolder;
 }
 
-#equipe {
-    color: #fa9483;
-    font-weight: bolder;
+.txt{ /*Texto 'Nossa missão'*/
+    font-size: 1.0em;
 }
 
-.txt{
-    font-size: 1.0em;
+#equipe { /*Título 'Nossa equipe'*/
+    color: #fa9483;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 #minibios {
@@ -35,7 +36,7 @@
     text-align: center;
 }
 
-.linha-minibio {
+.linha-minibio { /*Linha por pessoa*/
     padding: 3em;
     margin: 0 auto;
     padding: 3em;

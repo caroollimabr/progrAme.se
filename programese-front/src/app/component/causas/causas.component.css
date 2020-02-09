@@ -1,16 +1,16 @@
-.sobre-a-causa{
+.sobre-a-causa{ /*Toda a página*/
     background-color: linear-gradient(to bottom, #ffffff, #f3deca);
     background-repeat: no-repeat;
     overflow: auto;
     background-size: cover;
 }
 
-.img-causa{
+.img-causa{ 
     height: auto;
     width: 100%; 
 }
 
-#titulo-causa{
+#titulo-causa{ /*Título 'Conheça nossas causas'*/
     padding-bottom: 2em;
     padding-top: 1em;
     text-align: center;
@@ -19,10 +19,11 @@
     font-weight: bolder;
 }
 
-.sub-titulo{
-    padding-bottom: 1em
+.sub-titulo{ /*'Acessibilidade e inserção no mercado de trabalho'*/
+    padding-bottom: 1em;
 }
 
 .txt{
-    padding-bottom: 1em
+    padding-bottom: 1em;
+    text-align: justify;
 }

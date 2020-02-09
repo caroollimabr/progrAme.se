@@ -3,7 +3,8 @@
    z-index: 3; /*posiciona camadas: qt maior o n, sobrepõe camadas*/
 }
 .btn{
-   background:linear-gradient(to right, #4097aa8a,#fa9583a1);
+   background-color:  rgba(64, 151, 170, 0.863);
+   color: white;
 }
 
 /* Não há referência para isso 

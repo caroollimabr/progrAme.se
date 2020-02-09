@@ -1,14 +1,28 @@
-.cardSize {
-    max-width: 800px;
-    padding: 25px;
-  }
-  
-  .card input:focus ~ label, 
-  input:not(:placeholder-shown) ~ label,
-  input:valid ~ label,
-  input:-webkit-autofill:focus ~ label {
-    top:-5px;
-    font-size:13px;
-    color:#646464;
-    font-weight: 300;left:3px
-  }
+.center-block { /*Formulário*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-title { /*Título 'Alterar Usuário'*/
+  color: #4097aa;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  align-content: center;
+  text-align: center;
+}
+
+.fas { /*Ícones nome, telefone, senha */
+  color: #4097aa;
+}
+
+
+/* CLASSE INEXISTENTE no html
+.fal {
+  color: #4097aa;
+}*/
+
+.far { /*Ícone e-mail */
+  color: #4097aa;
+}

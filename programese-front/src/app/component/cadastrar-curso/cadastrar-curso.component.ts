@@ -1,4 +1,3 @@
-  
 import { Component, OnInit } from '@angular/core';
 import { Curso } from 'src/app/model/Curso';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -9,6 +8,7 @@ import { CursoService } from 'src/app/service/curso.service';
   templateUrl: './cadastrar-curso.component.html',
   styleUrls: ['./cadastrar-curso.component.css']
 })
+
 export class CadastrarCursoComponent implements OnInit {
 
   novo: boolean = false;
@@ -40,6 +40,7 @@ export class CadastrarCursoComponent implements OnInit {
     }
 
   }
+
   findById(id: number) {
     this.cursoService.getById(id).subscribe((curso: Curso) => {
       this.curso = curso;

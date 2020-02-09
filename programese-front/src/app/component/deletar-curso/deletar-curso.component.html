@@ -1,34 +1,25 @@
-<div>
-    Deseja realmente deletar o Curso: {{curso.nome}}?
-</div>
 
-<button (click)="btnSim()">Sim</button>
-<button (click)="btnNao()">Não</button>
+<br><br><br>
+<div class="container">
+    <div class="conteiner-delete">
 
-<!--Modal: Login / Register Form-->
 
-<!-- <div class="modal" id="confirmar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
-    <div class="modal-dialog cascading-modal" role="document">
-        <div class="modal-content">
-            <div class="login-logo">
-                <br><br>
-                <label>
-                    <h4 class="form-title">Deseja realmente deletar o Curso: {{curso.nome}}?</h4>
-                </label>
-            </div>
+    <p>Deseja realmente deletar o Curso: {{curso.nome}}?</p>
+    <br>
+    
 
-            <div class="text-center mt-4">
-                <button type="button" class="btn btn-default btn-rounded" data-dismiss="modal" id="btnSim"
-                    (click)="btnSim();">
-                    Sim
-                </button>
-            </div>
-            <div class="text-center mt-4">
-                <button type="button" class="btn btn-default btn-rounded" data-dismiss="modal" id="btnNao"
-                    (click)="btnNao();">
-                    Não
-                </button>
-            </div>
-        </div>
+
+
+
+    
+
+
+
+
+
+        <button type="button" (click)="btnNao()" class="btn btn-danger btn-md">Não</button>
+        <button type="button" (click)="btnSim()" class="btn btn-success btn-md">Sim</button>
+
+    
     </div>
-</div> -->
+</div>

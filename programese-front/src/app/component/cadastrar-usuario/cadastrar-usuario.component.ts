@@ -14,7 +14,7 @@ export class CadastrarUsuarioComponent implements OnInit {
   confirmacaoSenha: string = ''
   senhasConferem: boolean = false
   novo: boolean = false;
-  usuario: Usuario = new Usuario(null, null, null, null, null);
+  usuario: Usuario = new Usuario(null, null, null, null, "");
 
   formularioDeUsuario: FormGroup;
 
