@@ -1,4 +1,4 @@
-.center-block { /*Formulário*/
+.center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -11,21 +11,19 @@
   text-align: center;
 }
 
-.fas { /*Ícones nome, url e preço*/
+.fas {
   color: #4097aa;
 }
 
-
-/* CLASSE INEXISTENTE
 .fal {
   color: #4097aa;
-} */
+}
 
-.far { /*Ícones descrição e duração*/
+.far {
   color: #4097aa;
 }
 
-.btn{ /*Botão*/
+.btn{
 background-color: #4097aa;
 color: #ffffff;
 }

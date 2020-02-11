@@ -1,25 +1,25 @@
-.center-block { /* Div do contato */
+.center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.form-title{ /*Título 'Contato' */
+.form-title{
   color: #4097AA;
   font-weight: bold;
   font-size: 2.5em;
 }
 
-.md-form label{ /* Label dos campos do formulário */
+.md-form label{
   color: #bdbdbd;
   font-size: 0.8em;
 }
 
-.btn{ /* Botão */
+.btn{
   color: #ffff;
   background-color: #4097AA;
 }
-.fa{ /* Ícones */
+.fa{
   color: #4097AA;
 }
 
@@ -30,6 +30,6 @@
   overflow: auto;
 }
 
-.contato-form{ /* Formulário de contato sem título */
+.contato-form{
   padding-left: 3em;
 }

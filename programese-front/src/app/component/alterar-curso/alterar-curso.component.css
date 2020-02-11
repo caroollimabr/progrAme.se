@@ -1,27 +1,25 @@
-.center-block { /*Formululário*/
+.center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.form-title { /*Título 'Alterar Curso'*/
+.form-title {
     color: #4097aa;
     font-weight: bold;
     font-size: 2.5em;
     text-align: center;
 }
 
-.fas { /*Ícone nome, url e preço*/
+.fas {
     color: #4097aa;
 }
 
-/* CLASSE INEXISTENTE
-
 .fal {
     color: #4097aa;
-} */
+}
 
-.far { /*Ícones descrição e duração */
+.far {
     color: #4097aa;
 }
 

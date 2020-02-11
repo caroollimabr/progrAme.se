@@ -1,43 +1,46 @@
-/* NÃO TEM ESSA CLASSE
-
 .center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}*/
+}
 
-.form-title { /*Faça seu login*/
+.form-title {
     color: #4097aa;
     font-weight: bold;
     font-size: 2.5em;
     text-align: center;
 }
 
-.btn{ /*Botão*/
-    background-color: #4097aa;
-    color: #ffffff; /*Enviar*/
+.btn{
+    color: #4097aa;
 }
-.fa { /*Ícones*/
+.fa {
     color: #4097aa;
 }
 
-.login { /*Faça seu login*/
-    align-self: center;
+.btn {
+    background-color: #4097aa;
+    color: #ffffff;
 }
 
-/* NÃO CONSTA NO HTML
+.login-logo {
+    align-self: center;
+    align-self: center;
+}
 
 .logo {
     align-items: center;
     align-content: center;
 }
-*/
 
 .modal-content {
-    align-items: center;
+    align-items: center
+}
+
+.modal-content {
     background: url('../../../assets/images/bg-modal.png') center center no-repeat;
 }
 
-.text-center { /*btn 'Enviar' e 'Não tem conta?'*/
+.text-center {
     font-size: small;
 }
