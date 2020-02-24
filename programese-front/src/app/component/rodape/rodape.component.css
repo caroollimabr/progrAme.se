@@ -1,21 +1,21 @@
-.row{
+.row{ /*Parte de cima do rodapé*/
     padding: 1.8em;
 }
-.fab{
+.fab{ /*Ícones Facebook, Twitter, LinkedIn, Google, Instagram*/
     color: #f3deca;
 }
-.fas{
+.fas{ /*Ícones localização, e-mail e telefone*/
     color: #f3deca
 }
-.h6{
+.h6{ /*Contato*/
     color: #f3deca
 }
-.socialmedia{
+.socialmedia{ /*Div 'Redes Sociais'*/
     margin-top: 3em
 }
-.page-footer{
+.page-footer{ /*<footer>*/
     background-color: #2D4057
 }
-.container{
+.container{ /*Container explicação ProgrAme.se*/
     background-color: #2D4057;
 }

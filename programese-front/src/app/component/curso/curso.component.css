@@ -4,7 +4,32 @@
 
 }
 
+.cursos-cards {
+  max-width: 300px;
+}
+
+.btn-comprar
+{ 
+  background-color: #4097aa!important;
+  color: #fff!important;
+}
+
+.cursos-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .titulo{
     color: rgb(233, 160, 119);
     text-align: center;
+}
+
+.destaque-card-container h1 {
+  color: #4097AA;
+}
+
+.destaque-card-container {
+  background: linear-gradient(to bottom, #ffffff, #f3deca);
 }

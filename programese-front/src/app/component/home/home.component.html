@@ -7,7 +7,7 @@
 -->
 <div>
 <!-- Carousel -->
-<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carousel-example-2" class="carousel slide carousel-fade  pt-5 pb-5" data-ride="carousel">
   <!--Indicators-->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-2" data-slide-to="0" class="active bg-info" ></li>
@@ -63,15 +63,15 @@
 <!-- Fim do carousel -->
 </div>
 
-<div class="container-fluid">
-  <h1 class="my-4 text-center">Destaques<br />
+<div class="container-fluid destaque-card-container">
+  <h1 class="my-4 text-center pt-5">DESTAQUES<br />
   </h1>
-  <div class="row">
-    <div *ngFor="let curso of cursos" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+  <div class="row justify-content-center">
+    <div *ngFor="let curso of cursos" class="col-lg-3 col-md-4 col-sm-6 mb-4 cursos-cards">
       <div class="card h-100">
         <a [routerLink]="['/pagina-curso', curso.id]"><img class="card-img-top" src="{{curso.urlImagem}}" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
+        <div class="card-body cursos-card-body">
+          <h4 class="card-title text-center">
             <a>{{curso.nome}}</a>
           </h4>
           <p class="card-text">{{curso.descricao}}</p>

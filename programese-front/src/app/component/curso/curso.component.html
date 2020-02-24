@@ -1,22 +1,22 @@
 <!-- Page Content -->
-<div class="container">
+<div class="container-fluid destaque-card-container">
 
   <!-- Page Heading -->
-  <h1 class="my-4">Nossos cursos:<br />
+  <h1 class="my-4 text-center pt-3">Nossos cursos:<br />
   </h1>
 
-  <div class="row">
-    <div *ngFor="let curso of cursos" class="col-lg-3 col-md-4 col-sm-6 mb-4">
+  <div class="row justify-content-center">
+    <div *ngFor="let curso of cursos" class="col-lg-3 col-md-4 col-sm-6 mb-4 cursos-cards">
       <div class="card h-100">
         <a [routerLink]="['/pagina-curso', curso.id]"><img class="card-img-top" src="{{curso.urlImagem}}" alt=""></a>
-        <div class="card-body ">
-          <h4 class="card-title">
+        <div class="card-body cursos-card-body">
+          <h4 class="card-title text-center">
             <a>{{curso.nome}}</a>
           </h4>
           <p class="card-text">{{curso.descricao}}</p>
           <div class="text-center">
             <h4 class="font-weight-bold">R$ {{curso.preco}}</h4>
-            <div class="row">
+            <div class="row justify-content-cente">
               <div class="col-sm-6 d-flex float-left">
                   <button class="btn btn-sm btn-comprar" [routerLink]="['/alterar-curso', curso.id]" data-toggle="tooltip" data-placement="top" title="Alterar"><i class="fa fa-pencil-alt"></i></button>
               </div>

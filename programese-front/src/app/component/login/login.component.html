@@ -1,4 +1,4 @@
-<div class="modal" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
     <div class="modal-dialog cascading-modal" role="document">
         <!--Content-->
         <div class="modal-content">
@@ -8,7 +8,7 @@
                     <h1 class="form-title">Faça seu login</h1>
                 </label>
             </div>
-            <div class="col-xl-10 py-10">
+            <div class="col-xl-10 center-block">
                 <div class="md-form form-sm">
                     <i class="fa fa-user prefix"></i>
                     <input type="text" name="email" input [(ngModel)]="usuario.email"
@@ -35,8 +35,9 @@
                 <p>Campo(s) obrigatório(s)</p>
             </div>
             <br><br>
-            <p class="text-center">Não tem conta? <a data-toggle="modal" data-target="#modalLRForm2"
-                    [routerLink]="'/cadastrar-usuario'">Cadastre-se</a></p>
+            <!-- <p class="text-center">Não tem conta? <a data-toggle="modal" data-target="#modalLRForm2"
+                    [routerLink]="'/cadastrar-usuario'">Cadastre-se</a></p> -->
         </div>
     </div>
 </div>
+

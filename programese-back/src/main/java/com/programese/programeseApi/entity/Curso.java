@@ -32,7 +32,7 @@ public class Curso {
 	@NotEmpty(message = "O campo deve ser preenchido")
 	private String duracao;
 	
-	@Column(length = 100)
+	@Column(length = 1000)
 	@NotEmpty(message = "O campo deve ser preenchido")
 	private String urlImagem;
 	

@@ -1,34 +1,30 @@
-.center-block {
+.center-block { /*Formulário*/
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.form-title {
+.form-title {/*Título 'Cadastre-se'*/
   color: #4097aa;
   font-weight: bold;
   font-size: 2.5em;
   text-align: center;
 }
 
-.fa {
+.fa { /*Ícones*/
   color: #4097aa;
 }
 
-.login-logo {
+.login-logo { /*Div com título 'Cadastre-se'*/
   align-self: center
 }
 
-.btn {
+.btn { /*Botão*/
   background-color: #4097aa;
   color: #ffff;
 }
 
-.modal-content {
+.modal-content { /*Div que vai até o final do formulário*/
   background: url('../../../assets/images/bg-modal.png') center center no-repeat;
 }
 
-#p {
-  color: #4097aa;
-  font-size: small;
-}

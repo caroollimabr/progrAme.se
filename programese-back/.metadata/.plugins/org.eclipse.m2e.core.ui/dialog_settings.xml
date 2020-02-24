@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/maya/Documentos/projeto-integrador-ajustes-front"/>
 			<item value="/home/maya/Área de Trabalho/programe-se-backend"/>
 		</list>
 		<list key="projectNameTemplate">

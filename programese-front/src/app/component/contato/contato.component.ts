@@ -12,6 +12,10 @@ export class ContatoComponent implements OnInit {
   ngOnInit() {
   }
 
+  enviarComentario() {
+    alert("Enviado com sucesso :)")
+  }
+
 }
 
 
